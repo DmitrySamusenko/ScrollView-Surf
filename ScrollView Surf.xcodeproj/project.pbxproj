@@ -7,17 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77049795299914B300E9FFA7 /* EduCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77049794299914B300E9FFA7 /* EduCollectionView.swift */; };
+		77049797299916AE00E9FFA7 /* ProgramsEducation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77049796299916AE00E9FFA7 /* ProgramsEducation.swift */; };
+		7704979A2999189E00E9FFA7 /* EduCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770497992999189E00E9FFA7 /* EduCollectionViewCell.swift */; };
+		772832512999710900C1990E /* ChoosenCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772832502999710900C1990E /* ChoosenCollectionView.swift */; };
+		7782928A2996A4F000E67C93 /* AlignedCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778292892996A4F000E67C93 /* AlignedCollectionViewFlowLayout.swift */; };
 		77B0A49F2993FB9800731699 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B0A49E2993FB9800731699 /* AppDelegate.swift */; };
 		77B0A4A12993FB9800731699 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B0A4A02993FB9800731699 /* SceneDelegate.swift */; };
 		77B0A4A32993FB9800731699 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B0A4A22993FB9800731699 /* ViewController.swift */; };
 		77B0A4A62993FB9800731699 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77B0A4A42993FB9800731699 /* Main.storyboard */; };
 		77B0A4A82993FB9B00731699 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77B0A4A72993FB9B00731699 /* Assets.xcassets */; };
 		77B0A4AB2993FB9B00731699 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77B0A4A92993FB9B00731699 /* LaunchScreen.storyboard */; };
-		77B0A4B429941BCE00731699 /* EduProgCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B0A4B229941BCD00731699 /* EduProgCollectionViewCell.swift */; };
-		77B0A4B529941BCE00731699 /* EduProgCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77B0A4B329941BCE00731699 /* EduProgCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		77049794299914B300E9FFA7 /* EduCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EduCollectionView.swift; sourceTree = "<group>"; };
+		77049796299916AE00E9FFA7 /* ProgramsEducation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramsEducation.swift; sourceTree = "<group>"; };
+		770497992999189E00E9FFA7 /* EduCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EduCollectionViewCell.swift; sourceTree = "<group>"; };
+		772832502999710900C1990E /* ChoosenCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosenCollectionView.swift; sourceTree = "<group>"; };
+		778292892996A4F000E67C93 /* AlignedCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignedCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		77B0A49B2993FB9800731699 /* ScrollView Surf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ScrollView Surf.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77B0A49E2993FB9800731699 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77B0A4A02993FB9800731699 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,8 +34,6 @@
 		77B0A4A72993FB9B00731699 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77B0A4AA2993FB9B00731699 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77B0A4AC2993FB9B00731699 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		77B0A4B229941BCD00731699 /* EduProgCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EduProgCollectionViewCell.swift; sourceTree = "<group>"; };
-		77B0A4B329941BCE00731699 /* EduProgCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EduProgCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +47,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77049798299916C600E9FFA7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				77049796299916AE00E9FFA7 /* ProgramsEducation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		772832522999805E00C1990E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				77B0A4A42993FB9800731699 /* Main.storyboard */,
+				770497992999189E00E9FFA7 /* EduCollectionViewCell.swift */,
+				772832502999710900C1990E /* ChoosenCollectionView.swift */,
+				77049794299914B300E9FFA7 /* EduCollectionView.swift */,
+				77B0A4A22993FB9800731699 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		772832532999809900C1990E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				778292892996A4F000E67C93 /* AlignedCollectionViewFlowLayout.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		77283254299980DA00C1990E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				77B0A4AC2993FB9B00731699 /* Info.plist */,
+				77B0A4A72993FB9B00731699 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		77283255299980EA00C1990E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				77B0A4A02993FB9800731699 /* SceneDelegate.swift */,
+				77B0A49E2993FB9800731699 /* AppDelegate.swift */,
+				77B0A4A92993FB9B00731699 /* LaunchScreen.storyboard */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		77B0A4922993FB9800731699 = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +113,11 @@
 		77B0A49D2993FB9800731699 /* ScrollView Surf */ = {
 			isa = PBXGroup;
 			children = (
-				77B0A49E2993FB9800731699 /* AppDelegate.swift */,
-				77B0A4A02993FB9800731699 /* SceneDelegate.swift */,
-				77B0A4A22993FB9800731699 /* ViewController.swift */,
-				77B0A4B229941BCD00731699 /* EduProgCollectionViewCell.swift */,
-				77B0A4B329941BCE00731699 /* EduProgCollectionViewCell.xib */,
-				77B0A4A42993FB9800731699 /* Main.storyboard */,
-				77B0A4A72993FB9B00731699 /* Assets.xcassets */,
-				77B0A4A92993FB9B00731699 /* LaunchScreen.storyboard */,
-				77B0A4AC2993FB9B00731699 /* Info.plist */,
+				77283255299980EA00C1990E /* Base */,
+				77283254299980DA00C1990E /* Resources */,
+				772832532999809900C1990E /* Helpers */,
+				772832522999805E00C1990E /* Controllers */,
+				77049798299916C600E9FFA7 /* Model */,
 			);
 			path = "ScrollView Surf";
 			sourceTree = "<group>";
@@ -134,7 +183,6 @@
 				77B0A4AB2993FB9B00731699 /* LaunchScreen.storyboard in Resources */,
 				77B0A4A82993FB9B00731699 /* Assets.xcassets in Resources */,
 				77B0A4A62993FB9800731699 /* Main.storyboard in Resources */,
-				77B0A4B529941BCE00731699 /* EduProgCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,10 +193,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77049795299914B300E9FFA7 /* EduCollectionView.swift in Sources */,
+				7704979A2999189E00E9FFA7 /* EduCollectionViewCell.swift in Sources */,
 				77B0A4A32993FB9800731699 /* ViewController.swift in Sources */,
 				77B0A49F2993FB9800731699 /* AppDelegate.swift in Sources */,
+				772832512999710900C1990E /* ChoosenCollectionView.swift in Sources */,
+				77049797299916AE00E9FFA7 /* ProgramsEducation.swift in Sources */,
 				77B0A4A12993FB9800731699 /* SceneDelegate.swift in Sources */,
-				77B0A4B429941BCE00731699 /* EduProgCollectionViewCell.swift in Sources */,
+				7782928A2996A4F000E67C93 /* AlignedCollectionViewFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +349,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X92UUHFVDD;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "ScrollView Surf/Info.plist";
+				INFOPLIST_FILE = "ScrollView Surf/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -326,7 +378,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X92UUHFVDD;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "ScrollView Surf/Info.plist";
+				INFOPLIST_FILE = "ScrollView Surf/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
