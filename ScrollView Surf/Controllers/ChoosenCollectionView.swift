@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+//MARK: – Bottom Collection View:
 class ChoosenCollectionView: UICollectionView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     var cells = [ProgramsEducation]()
@@ -16,17 +16,7 @@ class ChoosenCollectionView: UICollectionView, UICollectionViewDelegate, UIColle
          layout.scrollDirection = .horizontal
          layout.minimumLineSpacing = 12
          
-//         let layout = AlignedCollectionViewFlowLayout(horizontalAlignment: .justified, verticalAlignment: .center)
-//         layout.minimumLineSpacing = 12
-//         layout.minimumInteritemSpacing = 12
-//         layout.scrollDirection = .horizontal
-//         layout.horizontalAlignment = .justified
-//         layout.verticalAlignment = .top
-
-         
-         
          super.init(frame: .zero, collectionViewLayout: layout)
-         //backgroundColor = .red
          delegate = self
          dataSource = self
          
@@ -47,14 +37,7 @@ class ChoosenCollectionView: UICollectionView, UICollectionViewDelegate, UIColle
             return true
         }
     }
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-//        return 0
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-//        return 0
-//    }
-//    
+  
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return cells.count
     }
@@ -62,7 +45,7 @@ class ChoosenCollectionView: UICollectionView, UICollectionViewDelegate, UIColle
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: EduCollectionViewCell.reuseID, for: indexPath) as! EduCollectionViewCell
        
-        var mark = cells[indexPath.row].isSelected
+        let mark = cells[indexPath.row].isSelected
         if mark {
             cell.backgroundColor = #colorLiteral(red: 0.1921568513, green: 0.1921568513, blue: 0.1921568513, alpha: 1)
             cell.textLabel.textColor = .white
@@ -80,7 +63,6 @@ class ChoosenCollectionView: UICollectionView, UICollectionViewDelegate, UIColle
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cell = collectionView.cellForItem(at: indexPath) as! EduCollectionViewCell
         cells[indexPath.row].isSelected.toggle()
         collectionView.reloadData()
     }

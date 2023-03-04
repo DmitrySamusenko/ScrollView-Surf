@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+//MARK: – Top Collection View:
 class EduCollectionView: UICollectionView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     var cells = [ProgramsEducation]()
@@ -16,7 +16,7 @@ class EduCollectionView: UICollectionView, UICollectionViewDelegate, UICollectio
          layout.scrollDirection = .horizontal
          layout.minimumLineSpacing = 12
          super.init(frame: .zero, collectionViewLayout: layout)
-         //backgroundColor = .red
+
          delegate = self
          dataSource = self
          
@@ -37,7 +37,7 @@ class EduCollectionView: UICollectionView, UICollectionViewDelegate, UICollectio
             return true
         }
     }
-    
+    //MARK: – CollectionView Settings:
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return cells.count
     }
@@ -63,14 +63,9 @@ class EduCollectionView: UICollectionView, UICollectionViewDelegate, UICollectio
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        //backgroundColor = .red
         let cell = collectionView.cellForItem(at: indexPath) as! EduCollectionViewCell
         cells[indexPath.row].isSelected.toggle()
-        //cell.backgroundColor = .darkGray
         collectionView.reloadData()
-        //collectionView.reloadData()
-        
-        //print("Tap!")
     }
     
      required init?(coder: NSCoder) {

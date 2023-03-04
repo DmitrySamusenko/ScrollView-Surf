@@ -6,8 +6,9 @@
 //
 
 import UIKit
-
+//MARK: – Main View Controller:
 class ViewController: UIViewController {
+    //MARK: – Outlets:
     @IBOutlet private var scrollView: UIScrollView!
     @IBOutlet private var testStack: UIStackView!
     @IBOutlet private var secondTestStack: UIStackView!
@@ -15,11 +16,9 @@ class ViewController: UIViewController {
     let eduCollectionView = EduCollectionView()
     let choosenCollectionView = ChoosenCollectionView()
     //MARK: – Properties:
-    
     let newButton: UIButton = {
         let button = UIButton()
         button.backgroundColor = #colorLiteral(red: 0.1921568513, green: 0.1921568513, blue: 0.1921568513, alpha: 1)
-        //button.tintColor = #colorLiteral(red: 0.1921568513, green: 0.1921568513, blue: 0.1921568513, alpha: 1)
         button.setTitle("Отправить заявку", for: .normal)
         button.layer.cornerRadius = 26
         button.addTarget(self, action: #selector(pressed), for: .touchUpInside)
@@ -36,37 +35,16 @@ class ViewController: UIViewController {
         return label
     }()
     
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         fixScrollViewBag()
         confUI()
-        
-        testStack.insertArrangedSubview(eduCollectionView, at: 2)
-        NSLayoutConstraint.activate([
-            eduCollectionView.heightAnchor.constraint(equalToConstant: 60),
-            eduCollectionView.widthAnchor.constraint(equalTo: testStack.widthAnchor)
-        ])
-        eduCollectionView.setCells(cells: ProgramsEducation.getPrograms())
-        eduCollectionView.allowsMultipleSelection = false
-        
-        secondTestStack.insertArrangedSubview(choosenCollectionView, at: 1)
-        NSLayoutConstraint.activate([
-            choosenCollectionView.heightAnchor.constraint(equalToConstant: 94),
-            choosenCollectionView.widthAnchor.constraint(equalTo: secondTestStack.widthAnchor)
-        ])
-        choosenCollectionView.setCells(cells: ProgramsEducation.getFakePrograms())
-        choosenCollectionView.allowsMultipleSelection = false
-        
-        
     }
 }
     
     extension ViewController {
         
-        //MARK: – Private functions
-        
+        //MARK: – Helper functions
         private func fixScrollViewBag() {
             if let top = UIApplication.shared.windows.first?.safeAreaInsets.top {
                 scrollView.contentInset.top = -top
@@ -82,7 +60,7 @@ class ViewController: UIViewController {
             alertController.addAction(alertAction)
             present(alertController, animated: true)
         }
-        
+        //MARK: – Configure UI Funcion:
         private func confUI() {
             view.addSubview(newButton)
             view.addSubview(textLabel)
@@ -98,23 +76,23 @@ class ViewController: UIViewController {
                 textLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
                 textLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -78)
             ])
+            
+            
+            testStack.insertArrangedSubview(eduCollectionView, at: 2)
+            NSLayoutConstraint.activate([
+                eduCollectionView.heightAnchor.constraint(equalToConstant: 60),
+                eduCollectionView.widthAnchor.constraint(equalTo: testStack.widthAnchor)
+            ])
+            eduCollectionView.setCells(cells: ProgramsEducation.getPrograms())
+            eduCollectionView.allowsMultipleSelection = false
+            
+            secondTestStack.insertArrangedSubview(choosenCollectionView, at: 1)
+            NSLayoutConstraint.activate([
+                choosenCollectionView.heightAnchor.constraint(equalToConstant: 94),
+                choosenCollectionView.widthAnchor.constraint(equalTo: secondTestStack.widthAnchor)
+            ])
+            choosenCollectionView.setCells(cells: ProgramsEducation.getFakePrograms())
+            choosenCollectionView.allowsMultipleSelection = false
         }
     }
-extension UIButton {
 
-    override open func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        isHighlighted = true
-        super.touchesBegan(touches, with: event)
-    }
-
-    override open func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        isHighlighted = false
-        super.touchesEnded(touches, with: event)
-    }
-
-    override open func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-        isHighlighted = false
-        super.touchesCancelled(touches, with: event)
-    }
-
-}

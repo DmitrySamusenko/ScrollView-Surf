@@ -6,14 +6,13 @@
 //
 
 import UIKit
-
+//MARK: – Cell:
 class EduCollectionViewCell: UICollectionViewCell {
     
     static let reuseID = "EduCollectionViewCell"
 
     let textLabel: UILabel = {
         let label = UILabel()
-        label.text = "Trampampam"
         label.textAlignment = .center
         return label
     }()

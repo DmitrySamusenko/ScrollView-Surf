@@ -18,6 +18,7 @@
 		77B0A4A62993FB9800731699 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77B0A4A42993FB9800731699 /* Main.storyboard */; };
 		77B0A4A82993FB9B00731699 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77B0A4A72993FB9B00731699 /* Assets.xcassets */; };
 		77B0A4AB2993FB9B00731699 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77B0A4A92993FB9B00731699 /* LaunchScreen.storyboard */; };
+		77D008F729B398CC0059D07D /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D008F629B398CC0059D07D /* UIButton + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		77B0A4A72993FB9B00731699 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77B0A4AA2993FB9B00731699 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77B0A4AC2993FB9B00731699 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77D008F629B398CC0059D07D /* UIButton + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,12 +49,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		77049798299916C600E9FFA7 /* Model */ = {
+		77049798299916C600E9FFA7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				77049796299916AE00E9FFA7 /* ProgramsEducation.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		772832522999805E00C1990E /* Controllers */ = {
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				778292892996A4F000E67C93 /* AlignedCollectionViewFlowLayout.swift */,
+				77D008F629B398CC0059D07D /* UIButton + Extension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -117,7 +120,7 @@
 				77283254299980DA00C1990E /* Resources */,
 				772832532999809900C1990E /* Helpers */,
 				772832522999805E00C1990E /* Controllers */,
-				77049798299916C600E9FFA7 /* Model */,
+				77049798299916C600E9FFA7 /* Models */,
 			);
 			path = "ScrollView Surf";
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				77B0A4A32993FB9800731699 /* ViewController.swift in Sources */,
 				77B0A49F2993FB9800731699 /* AppDelegate.swift in Sources */,
 				772832512999710900C1990E /* ChoosenCollectionView.swift in Sources */,
+				77D008F729B398CC0059D07D /* UIButton + Extension.swift in Sources */,
 				77049797299916AE00E9FFA7 /* ProgramsEducation.swift in Sources */,
 				77B0A4A12993FB9800731699 /* SceneDelegate.swift in Sources */,
 				7782928A2996A4F000E67C93 /* AlignedCollectionViewFlowLayout.swift in Sources */,
