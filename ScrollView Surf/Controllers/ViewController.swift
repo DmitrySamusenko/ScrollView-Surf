@@ -39,6 +39,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         fixScrollViewBag()
         confUI()
+        
     }
 }
     
@@ -62,6 +63,8 @@ class ViewController: UIViewController {
         }
         //MARK: – Configure UI Funcion:
         private func confUI() {
+            eduCollectionView.backgroundColor = .clear
+            choosenCollectionView.backgroundColor = .clear
             view.addSubview(newButton)
             view.addSubview(textLabel)
             textLabel.translatesAutoresizingMaskIntoConstraints = false
